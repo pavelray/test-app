@@ -1,6 +1,7 @@
 "use client";
 import GoogleMap from "@/components/GoogleMap";
 import Leaflet from "@/components/Leaflet";
+import Mapbox from "@/components/Mapbox";
 import Head from "next/head";
 import React, { Fragment, useEffect, useState } from "react";
 
@@ -25,7 +26,8 @@ const Index = () => {
       <div className="container">
         <h1>Dashboard</h1>
         {/* <Leaflet data={data} /> */}
-        {data && <GoogleMap data={data} />}
+        {/* {data && <GoogleMap data={data} />} */}
+        <Mapbox/>
       </div>
 
       <style jsx>{`

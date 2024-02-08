@@ -38,7 +38,7 @@ const GoogleMap = ({ data }) => {
             lat,
             lng,
           },
-          //content: pinGlyph.element,
+          content: pinGlyph.element,
         });
         heatMapData.push({
           location: new google.maps.LatLng(lat, lng),
@@ -71,7 +71,7 @@ const GoogleMap = ({ data }) => {
         zoom: 8,
         mapId: "DEMO_MAP_ID",
       });
-      //new MarkerClusterer({ markers, map });
+      new MarkerClusterer({ markers, map });
 
       const heatmap = new HeatmapLayer({
         data: heatMapData,
